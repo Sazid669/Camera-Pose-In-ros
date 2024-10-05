@@ -1,0 +1,7 @@
+<launch>
+    <param name="~frame_id" type="string" value="world_ned" />
+    <include file="$(find turtlebot_simulation)/launch/turtlebot_hol_circuit2_aruco.launch" />
+    <!-- <node pkg="hands_on_planning" type="deadReckoning.py" name="dead_reckoning_node"/> -->
+    <node pkg="hands_on_precption" type="deadReckoning_node.py" name="dead_reckoning_node"/>
+    <node pkg="hands_on_precption" type="CameraPose.py" name="aruco_detector"/>
+</launch>
