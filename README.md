@@ -52,3 +52,5 @@ stonefish simulator need to be installed in pc. The file have a dead reckoning n
 ```bash
 rosrun hands_on_precption controller.py
 ```
+
+Thank you!
